@@ -1,0 +1,169 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Shylee}{Ezroni}{ 
+\href{mailto:shyezroni@gmail.com}{shyezroni@gmail.com} | 516.304.2017
+| \href{http://www.linkedin.com/in/shyezroni}{linkedin.com/shyezroni}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip .3cm
+\section{Skills}
+\begin{minipage}[t]{.6\textwidth}
+\subsection{Programming}
+\location{Languages:}
+\textbullet{} Python \textbullet{} Flask \textbullet{} R \textbullet{} RShiny \textbullet{} SQL \textbullet{} Java \textbullet{} Spring Boot \textbullet{} Bash \textbullet{}Unix \textbullet{} \LaTeX
+\\
+\location{Software:}
+\textbullet{} Cloud Foundry \textbullet{} Bosh \textbullet{} Git \textbullet{} Qpid \textbullet{} Jenkins \textbullet{} Prometheus/Grafana
+\sectionsep
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.35\textwidth}
+\subsection{Spoken \& Written}
+\location{Native fluency:} English, Spanish, Hebrew\\
+\location{Reading/Writing fluency:} French\\
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+
+\runsubsection{JPMorgan Chase \& Co.}
+\descript{| Software Engineer, Cloud SRE, Data Lead }
+\location{June 2017 – Present | Jersey City, NJ}
+\begin{tightemize}
+\item Shaped leadership priorities by piloting, automating, and presenting reports measuring Cloud Platforms User Experience
+\item Created JIRA service desk bot, automating ticket interactions resolving more than 20\% of tickets without team intervention
+\item Spearheaded several applications for the 2018 JPMC Cloud Interns: web-apps streamlining multiple communication channels with users and a directory for projects developed by all technology interns
+\item Transformed communication with users by developing and supporting cloud native web-apps that increased reach and transparency of platform announcements and reduced escalations
+\item Developed automation scripts to monitor over 50 cloud foundry environments and micro-services to reduce outage impacts
+\item Escalation point and SME for several services offered on the private cloud such as Apache Qpid and PCC Gemfire
+\item Led Agile ceremonies as Scrum Master and aided in completing stories by facilitating cross-team relationships
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://envirocenter.yale.edu/}{Yale Center for Environmental Law \& Policy}}
+\descript{| Data Programmer }
+\location{January 2017 – May 2017 | New Haven, CT}
+\begin{tightemize}
+\item Created the ETL pipeline in R for the \textbf{\href{https://epi.envirocenter.yale.edu/epi-team}{Environmental Performance Index}}, a biennial report that ranks the environmental sustainability of 180 countries to enable policy makers worldwide in establishing targeted environmental policy goals
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{http://pamanyungan.net/}{Yale Historical Linguistics Lab}}
+\descript{| Analytics Research Assistant}
+\location{October 2016 – May 2017 | New Haven, CT}
+\begin{tightemize}
+\item Developed a data pipeline in R to process and analyze large scale linguistic data sets, resulting in identification of genetic compositions and significant correlations thus accelerating phylogenic research
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Leadership \& Volunteering
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Leadership \& Volunteering}
+\runsubsection{JPMorgan Chase \& Co.}
+\descript{}
+\location{June 2018 – Present | Jersey City, NJ}
+\begin{tightemize}
+     \item \descript{\href{https://careers.jpmorgan.com/careers/US/en/programs/tech-connect}{Tech Connect} | Leadership program aiming to empower the next generation of leaders and drive innovation through tech }
+    \item \descript{\href{https://www.jpmorganchase.com/corporate/About-JPMC/technology-for-social-good.htm}{Force for Good} | \href{https://ccapinc.org/}{Careers through Culinary Arts  } | Team Lead | CRM Solution} 
+    \item \descript{\href{https://www.jpmorganchase.com/corporate/About-JPMC/technology-for-social-good.htm}{Force for Good} | \href{https://www.rescue.org/}{International Rescue Committee} | Developer | Logrframe web-app}
+    \item \descript{\href{https://girlswhocode.com/2018/07/02/girls-code-summer-immersion-programs-return-new-york-city/}{Girls Who Code} | Mentored 20 young women on career goals and web development}
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\runsubsection{Yale University}
+\descript{| Masters in Statistics}
+\location{Aug 2016 - May 2017 | New Haven, CT}
+\sectionsep
+\runsubsection{Wentworth Institute of Technology}
+\descript{| BS in Applied Mathematics}
+\location{Minor in Media, Culture \& Communications | Aug 2013 - Aug 2016 | Boston, MA}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Conferences \& Presentations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conferences \& Presentations}
+\runsubsection{\href{https://www.broadinstitute.org/partnerships/education/diversity-initiatives/srpg/shylee-ezroni}{Broad Institute}}
+\descript{| Evolutionary Genomics Research}
+\location{"Identifying leading gene expression features to determine SNPS causative of disease"}
+\begin{tightemize}
+    \item \descript{\href{http://www.abrcms.org/images/Past_Programs/2015_ABRCMS_Final_Program_and_Exhibitor_Guide.pdf}{ABRCMS 2015, Seattle} | Poster Presentation Winner } 
+    \item \descript{\href{https://asbmbumb.weebly.com/}{ASBMB Northeast Regional Symposium} | Poster Presentation}
+\end{tightemize}
+
+\sectionsep
+
+\end{document}  \documentclass[]{article}
